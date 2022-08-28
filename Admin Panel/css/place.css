@@ -1,0 +1,50 @@
+.p-title{
+ margin: 2%;
+ background:rgb(184, 184, 184);
+ border-width: 4px 1.25em;
+ border: solid rgb(0, 0, 0);
+ border-radius: 12px;
+ 
+}
+
+.p-title h1{
+    padding: 2%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fxrow{
+/* border:black 2px solid; */
+margin: 2%;
+display: flex;
+flex-wrap:wrap;
+justify-content: space-evenly;
+/* background-color: black; */
+
+}
+
+.fxcard{
+margin-top: 2%;
+margin-bottom: 2%;
+border: rgb(3, 0, 5) groove 3px; 
+width: 290px;
+text-align: justify;
+background-color: rgb(230, 225, 225);
+color: rgb(0, 0, 0);
+border-radius: 12px;
+
+}
+
+.fxcard h3{
+  text-align: center;
+  margin:2%;
+}
+
+.fxcard p{
+  margin: 4%;
+}
+
+.fxcard img{
+  border: black solid 2px;
+}
+

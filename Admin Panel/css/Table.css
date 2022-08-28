@@ -1,0 +1,54 @@
+.tabledata{
+    margin: 0 2% 2% 2%; 
+    background-color: rgb(255, 255, 255);
+}
+
+.tabledata2{
+    margin: 2%; 
+    background-color: rgb(255, 255, 255);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /* margin: 2%; */
+    text-align: center;
+    border: solid 2px black;
+}
+
+th
+{
+    padding: 1%;
+    background-color: #ff23e2;
+    border: solid 2px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+
+}
+td{
+    
+    border: solid 2px black;
+}
+tr{
+    line-height: 50px;
+}
+
+
+
+tr:nth-child(even)
+{
+    background-color: #ffffff;
+}
+
+.headmain11{
+background: aqua;
+color: black;
+margin: 2%;
+padding: 2%;
+border: solid 2px black;
+border-radius: 30px;
+text-align: center;
+}
+

@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+} 
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url('../res/navbg.jpg');
+    background-size: cover;
+    
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    padding-left: 0%;
+    padding-right: 0%;
+    align-items: center;
+    background-color: rgb(197, 192, 192) ;
+    /*  background-image: url('res/navbg.jpg'); */
+    /* background-image: url('res/navbg.jpg');  */
+    
+}
+
+.logo{
+    width: 250px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+    margin: 10px 20px;
+    display: none;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+nav ul li a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    font-size: large;
+    
+}
+nav ul li a:hover{
+    color:#f83232;
+}
+
+nav a.active {
+    color: #491fe0;
+    
+  }
+
+.row{
+      display: flex;
+      justify-content: space-between;
+      padding-left: 2%;
+      padding-right: 2%;
+      align-items: center;
+      margin: 40px 0;
+      
+}
+
+.row .col-1{
+column-count: 4;
+}
+.col-1 p{
+    flex-basis: 40%;
+    position: relative;
+    
+}
+
+.homebg{
+    background-image: url('../res/homebg.jpg');
+    margin: 2%;
+    height: 500px;
+}
+
+.info{
+background-color:rgb(214, 213, 213);
+margin: 0 2%;
+}
+
+.info p{
+    font-family:cursive;
+    padding: 5%;
+}
+
+.promise{
+margin: 0% 2% 0% 2%;
+ background-color: #ffffff;
+}
+
+.promise img{
+    border-radius: 50%;
+    
+}
+
+.promise h3{
+    text-align: center;
+    padding: 2% ;
+}
+
+.milestone{
+    background-color: white;
+    margin: 0% 2% 0 2%;
+    /* padding: 0; */
+}
+.milestone h1{
+    padding-top: 2%;
+}
+.block{
+    background-color: rgb(214, 213, 213);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 2% 0 2%;
+}
+
+.blockcol1{
+   flex: 1 1 21rem;
+   margin: 10px 20px;
+   border-color: red;
+   border-radius: 2px;
+}
+
+.blockcol1 h4{
+text-align: center;
+margin-bottom: 2%;
+}
+
+.blockcol1 p{
+    margin: 5%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.block2{
+    background-color:rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 2% 2% 2%;
+}
+
+.blockcol21{
+   flex: 1 1 21rem;
+   margin: 10px 20px;
+   border-color: red;
+   border-radius: 2px;
+}
+
+.blockcol21 h3{
+text-align: center;
+margin: 5%;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.blockcol21 p{
+    margin: 5%;
+    text-align: center;
+   
+}
+
+.blockcol21 h1{
+    text-align: center;
+    margin: 5%;
+    font-size: 45px;
+    color: red;
+    font-family: cursive;
+    }
+
+
+/*---------------------------------------------------------------------Privacy policy page----------------------------------------------------*/
+.row-m{
+    text-align: justify;
+    background-color: rgb(230, 225, 225);
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.row-p{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.row-p p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.row-p h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*-------------------------------------------------------About Us------------------------------------------------------------------------*/
+
+.rowabout{
+    margin: 2% 2% 2% 2%;
+    background-color:rgb(230, 225, 225); 
+}
+
+.rowabout1{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.rowabout1 h1{
+text-align: center;
+text-shadow: #333;
+}
+
+.rowabout1 p{
+    padding-top: 2%;
+    text-decoration:rgb(184, 184, 184);
+}
+
+.rowcol1, .rowcol2{
+    padding-bottom:2%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.rowcol1 h3, .rowcol2 h3{
+text-align: center;
+}
+.rowcol1 p, .rowcol2 p{
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.rowcol1 img, .rowcol2 img{
+    border-radius: 50%;
+    margin: 1%;
+}
+
+
+/* .rowabout2 .rowcol1{
+    margin-left: 2%;
+    padding-right: 50%;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.rowabout2 .rowcol2{
+    padding-left: 50%;
+    margin-right: 5%;
+    text-align: justify;
+} */
+
+/*-------------------------------------------------------------------------------------Map--------------------------------------------*/
+.htitle{
+    background-color: rgb(184, 184, 184);;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.htitle h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.mapdis{
+    margin: 2%;
+    width: 96%;
+  }
+
+/* ------------------------------------------functions for menu and other----------------------------------------------------------------- */
+@media only screen and (max-width:700px)
+{
+    nav ul{
+        width:100%;
+        height: 100%;
+        background-color:#333;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        z-index: 10;
+    }
+    nav ul li{
+        display:block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+    color: #fff;
+    } 
+    .menu-icon{
+        display: block;
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .homebg{
+        background-image: url('../res/homebg.jpg');
+        background-repeat: round;
+        height: 50%;
+    }
+} 
+
+p{
+    text-align: justify;
+}

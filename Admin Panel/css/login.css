@@ -1,0 +1,121 @@
+.loginmain{
+margin: 2%;
+padding: 0;
+box-sizing: border-box;
+background:url('../res/loginbg.jpg');
+/* background: linear-gradient(red,yellow); */
+background-size: cover;
+height: 700px;
+}
+
+.loginpanel{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    /* border: solid 2px black; */
+    margin: 15%;
+    background: linear-gradient(rgb(0, 247, 255),rgb(22, 161, 241));
+    padding: 2%;
+    border-radius: 12px;
+    
+}
+
+.loginpanel h1{
+    font-family: 'Heebo', sans-serif;
+    width: 50%;
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid purple;
+    margin-bottom: 15px;
+    padding: 13px 0;
+    
+}
+
+.box{
+    width: 100%; 
+    margin: 22px 0px;
+    border-bottom: 2px solid purple;
+}
+
+.box input{  
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: rgb(0, 0, 0);
+}
+
+.btn{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    outline: none; 
+    align-items: center;
+    margin: 12px 0;
+    padding: 10px 100px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+    
+}
+
+.box i{ 
+    width: 5px; 
+    text-align: center;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    color: purple; 
+    background: white; 
+    
+}
+
+.box1{
+text-align: center;
+}
+
+.box1 a{
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .formdes{
+margin-left: 25%;
+padding: 2%;
+width:500px;
+height: 300px;
+/* align-items: center; */
+/* justify-content: center; */
+/* border: solid 2px black; */
+/* background-color: aqua; */
+/* } */
+
+/* .formdes label{
+    margin: 5%;
+}
+
+.formdes input{
+    margin: 5%;
+}
+
+.formdes .bt{
+width: 100px;
+height: 50px; 
+} */

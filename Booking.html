@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <title>Aqua- Spa and salon</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $('.checkbx').click(function()
+        {
+            var text="";
+            $('.checkbx:checked').each(function()
+            {
+                text+=$(this).val()+',';
+                console.log(text);
+             });
+             text=text.substring(0,text.length-1);
+             $("#selectedtext").val(text);
+             var count=$("[type='checkbox']:checked").length;
+             console.log(count*1000);
+             var add=count*550;
+
+             document.getElementById('amount').value=add;
+
+        });
+    });
+</script>
+
+<!-- <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script language="javascript">
+        $(document).ready(function () {
+            $("#txtdate").datepicker({
+                minDate: 0
+            });
+        });
+    </script> -->
+        
+        <meta name="viewport" content="width-device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/from.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <!-- <script language="javascript">
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0');
+            var yyyy = today.getFullYear();
+        
+            today = yyyy + '-' + mm + '-' + dd;
+            $('#date_picker').attr('min',today);
+        </script> -->
+
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="res/navlogo.png" alt="header_logo" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a class="active" href="Booking.html">Booking</a></li>
+                        <li><a href="Homepage.html">Log out</a></li>
+                       
+                    </ul>
+                </nav>
+                <img src="res/nav.png" alt="" class="menu-icon" onclick="togglemenu()">
+            </div>  
+            <!----------------------------------------------------------------------------------------->
+            <script>
+                var menuList=document.getElementById("menuList");
+
+                menuList.style.maxHeight="0px";
+
+                function togglemenu(){
+                    if( menuList.style.maxHeight=='0px')
+                    {
+                        menuList.style.maxHeight="200px";
+                    }
+                    else
+                    {
+                        menuList.style.maxHeight="0px";
+                    }
+                }
+            </script>
+ <!----------------------------------------------------------------------------------------->
+            <div class="contenthead">
+                <h1>Book Appointment</h1>
+            </div>           
+
+            <div class="form1">
+                <form action="appoint.php" method="POST">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="Name" placeholder="Your name..">
+                
+                    <label for="lname">E-mail</label>
+                    <input type="Email" id="lname" name="Email" placeholder="">
+
+                    <label for="fname">Phone number</label>
+                    <input type="text" id="fname" name="Phone" placeholder="">
+                    
+                    <label for="fname">Time</label>
+                    <input type="time" id="fname" name="Time" placeholder="">
+                
+                    <label for="lname">Date</label>
+                    <input type="date" id="textdate" name="Date" placeholder="">
+                    <br><br>
+                    <label for="">Services</label>
+                    <br>
+                    <br>
+
+                    <input type="checkbox" class="checkbx" value="Body Treatments">
+                    <label for="">Body Treatments</label>
+                    <br>
+                    <input type="checkbox" class="checkbx" value="Herbal body masks">
+                    <label for="">Herbal body masks</label>
+                    <br>
+                    <input type="checkbox" class="checkbx" value="Seaweed body wraps">
+                    <label for="">Seaweed body wraps</label>
+                    <br>
+                    <input type="checkbox" class="checkbx" value="Salt scrubp">
+                    <label for="">Salt scrubp</label>
+                    <br>
+                    <input type="checkbox" class="checkbx" value="Massage">
+                    <label for="">Massage</label>
+                    <br>
+                    <input type="checkbox" class="checkbx" value="Sauna">
+                    <label for="">Sauna</label>
+                    <br>
+                    <input type="checkbox" class="checkbx" value="Reflexology and waxing">
+                    <label for="">Reflexology and waxing</label>
+                    <br>
+                    
+                    <input type="text" id="selectedtext" name="List" readonly>
+                    
+ 
+                    <!-- <input type="checkbox" classs="checkbx" name="type" value="Body Treatments" />Body Treatments <br>
+                   
+                    <input type="checkbox" classs="checkbx" name="type" value="Herbal body masks" /> Herbal body masks <br>
+                    
+                    <input type="checkbox" classs="checkbx" name="type" value="seaweed body wraps" />&nbsp; seaweed body wraps &nbsp;&nbsp;</span>
+
+                    <span style="white-space:nowrap; display:inline-block">
+                    <input type="checkbox" classs="checkbx" name="type" value="salt scrubp" />&nbsp;salt scrub,&nbsp;&nbsp;</span>
+
+                    <span style="white-space:nowrap; display:inline-block">
+                    <input type="checkbox" classs="checkbx" name="type" value="mud bath" />&nbsp; mud bath,  &nbsp;&nbsp;</span>
+                       
+                    <span style="white-space:nowrap; display:inline-block">
+                    <input type="checkbox" classs="checkbx" name="type" value=" massage" />&nbsp; massage, &nbsp;&nbsp;</span>
+                        
+                    <span style="white-space:nowrap; display:inline-block">
+                    <input type="checkbox" classs="checkbx" name="type" value="steam room" />&nbsp;steam room, &nbsp;&nbsp;</span>
+    
+                    <span style="white-space:nowrap; display:inline-block">
+                    <input type="checkbox" classs="checkbx" name="type" value="jet bath" />&nbsp; jet bath, &nbsp;&nbsp;</span>
+
+                    <span style="white-space:nowrap; display:inline-block">
+                    <input type="checkbox" classs="checkbx" name="type" value="whirlpoo" />&nbsp; whirlpool &nbsp;&nbsp;</span>
+                           
+                     <span style="white-space:nowrap; display:inline-block">
+                    <input type="checkbox" classs="checkbx" name="type" value=" sauna" />&nbsp; sauna &nbsp;&nbsp;</span>
+                            
+                    <span style="white-space:nowrap; display:inline-block">
+                    <input type="checkbox" name="type" class="checkbx" value="Reflexology and waxing " />&nbsp; Reflexology and waxing &nbsp;&nbsp;</span>
+
+                        <br> -->
+                        <br><br>
+
+                        <label for="">Amount</label>
+
+                        <input type="text" placeholder="" name="Amount" id="amount" readonly>
+                        <br><br>
+                    <label for="">Mode of Payment</label><br><br>
+                    
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="UPI">UPI (aquasquaandsalon@ybl)</label><br>
+                    <img src="res/qr.jpg" width="250px" height="250px" alt="hello"><br>
+                    
+
+                    <input type="text" placeholder="Enter your UPI Transcation id" name="UPI">
+
+                    <input type="submit" value="Submit" >
+                  </form>
+            </div>
+         
+        </div>            
+<!------------------footer design----------------------------------------------->
+              <footer class="footer">
+                <div class="container1">
+                    <div class="row1">
+                        <div class="footer-col">
+                            <h4>About Aqua</h4>
+                            <ul>
+                                <li><a href="About.html">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Offers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Info</h4>
+                            <ul>
+                                <li><a href="#">T & C</a></li>
+                                <li><a href="#">Privacy & Policy</a></li>
+                                <li><a href="Admin Panel/dashboard.html">Admin Login</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+            </footer>
+
+        </div>
+    </body>
+</html>

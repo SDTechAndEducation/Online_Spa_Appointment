@@ -1,0 +1,68 @@
+input[type=text],input[type=date],input[type=password], input[type=email],
+input[type=time], input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width:100%;
+    background-color: #f396cf;
+    color: rgb(0, 0, 0);
+    font-size:25px ;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form1{
+      align-items: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 2%;
+    margin: 2%;
+    border: solid black 2px;
+    width: auto;
+  }
+
+
+.headermain1{
+    background-color: rgb(255, 142, 249);
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    text-align: center;
+    margin: 2%;
+    padding: 1%;
+}
+
+.container1{
+    background: url('bg.jpg');
+    background: contain;
+}
+
+input[type=checkbox]{
+  white-space:nowrap; 
+  display:inline-block;
+  line-height:2em;
+}
+
+.contenthead{
+    background: rgb(241, 142, 204);
+    margin: 2%;
+    padding: 2%;
+    border-radius: 30px;
+    border-bottom: solid 2px rgb(0, 0, 0);
+    text-align: center;
+}
+
+
